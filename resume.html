@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- PAGE SETUP -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Anson Ly</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Script -->
+    <script src="js.modernizer.js"></script>
+</head>
+
+<body>
+    <header id="home">
+        <nav id="nav-wrap">
+            <ul id="nav" class="nav">
+                <li class="current"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="row banner">
+            <div class="banner-text">
+                <!-- ABOUT ME -->
+                <h1 class="responsive-headline">Anson Ly</h1>
+                <div class="row">
+                    <div class="three columns">
+                        <img class="profile-pic" src="images/Anson Ly .png" alt="" />
+                    </div>
+                    <h3> Aspiring Cloud Professional with a Secret Clearance & current Master's degree student studying Cloud Computing with aspirations to obtain AWS certifications. I enjoy meeting new people and discussing a variety of topics. Eager to contribute
+                        expertise in cloud architecture and design, seeking connections with fellow tech enthusiasts for collaborative growth.
+                        <hr/>
+                        <!-- LinkedIn-->
+                        <ul class="social">
+                            <li><a href="https://www.linkedin.com/in/anson-ly/" class="linkedin-icon" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                            <li><a href="https://github.com/ansonly15" class="github-icon" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
+                            <li><a href="images/Anson Ly Resume.pdf" download class="resume-icon" target="_blank"><i class="fa fa-download"></i> Resume</a></li>
+                        </ul>
+                </div>
+            </div>
+    </header>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-col-1">
+            <img src="images/Anson.jpg">
+        </div>
+        <div class="about-col-2">
+            <h2><i class="fa-sharp fa-solid fa-user"></i> About Me</h2>
+            </br>
+            <p>I'm currently pursuing a Masters' degree in Cloud Computing at the Unversity of Maryland Global Campus where I am learning about cloud architecture, design, and implementation. I am currently developing my skills in cloud computing by working
+                on cloud projects as well as obtaining AWS certifications like AWS Cloud Practitioner and AWS Solutions Architect.
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab( 'experiences')">Experiences</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li> <span>PowerShell Scripting </span></li>
+                    <li> <span>Python </span></li>
+                    <li> <span>HTML & CSS </span></li>
+                    <li> <span>Javascript </span></li>
+                    <li> <span>Amazon EC2 </span></li>
+                    <li> <span>Amazon S3 </span></li>
+                    <li> <span>Knowledge on Windows Server Platforms </span></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experiences">
+                <ul>
+                    <li><span><i class="fa-solid fa-flag-usa fa-s"></i><strong> United States Army Reserves - Information Technology Specialist</strong></span>
+                        <br>Apr 2019 - Present
+                        <br>● Managed and maintained secure communication systems for a brigade, ensuring constant connectivity and data integrity.</br>
+                        ● Implemented and enforced cybersecurity protocols, safeguarding sensitive information against unauthorized access and cyber threats. </br>
+                        ● Managed and maintained servers, ensuring high availability and optimal performance. </br>
+                    </li>
+                    <li><span><i class="fa-solid fa-user-tie fa-sm"></i><strong> Aflac (American Family Life Assurance Company of Columbus) - Information Technology Specialist</strong></span>
+                        <br> Nov 2021- Present
+                        <br>● Configured routers, switches, and firewalls to optimize network performance. </br>
+                        ● Troubleshooted network issues and resolved connectivity problems promptly.</br>
+                        ● Provided technical support to end-users, resolving hardware and software issues.</br>
+                        ● Documented support processes and created user-friendly troubleshooting guides.</br>
+                    </li>
+                    <li><span><i class="fa-solid fa-whiskey-glass fa-sm"></i><strong> Cha Bei Bei Tea House - Manager</strong></span>
+                        <br> Apr 2015 - May 2017
+                        <br>● Assisted users in troubleshooting and resolving software-related problems, including application errors and compatibility issues. ● Analyzed performance data to evaluate and improve operations, target business conditions
+                        and forecast needs, using tools such as Excel and data visualization software.</br>
+                        ● Lead and supervised actions needed to develop controls that mitigate compliance, operational, financial risk </br>
+                        ● Assisted with customer inquiries, issues, and escalations related to operations.</br>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li> University of Maryland Global Campus M.S Cloud Computing<br><span> Jun 2024</span></li>
+                    <li> University of California - San Diego B.S Psychology with a Specialization in Clincial Psychology <br><span> Jul 2022</span></li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title"> Projects </h1>
+            <div class="projects-list">
+                <div>
+                    <h2><i class="fa-regular fa-window-maximize"></i> Launch a Website with Amazon S3</h2>
+                    <p>• Deployed a scalable and cost-effective static website using Amazon S3, showcasing proficiency in cloud storage and web infrastructure management.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2><i class="fa-solid fa-wifi"></i> Analyze Network Traffic Using Wireshark</h2>
+                    <p>• Proficiently utilized Wireshark to capture and analyze network traffic, enabling proactive troubleshooting, identifying performance bottlenecks, and enhancing overall network security and efficiency.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2><i class="fa-solid fa-network-wired"></i> Simulate a Network with Mininet</h2>
+                    <p>• Effectively orchestrated a comprehensive network simulation utilizing Mininet in conjunction with Amazon EC2 cloud instances, demonstrating a hybrid network environment to assess scalability, load balancing, and fault tolerance strategies.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title2">Contact Me</h1>
+                    <p><i class="fa-solid fa-circle-user"></i> Anson Ly</p>
+                    <p> <i class="fa-solid fa-envelope"></i> ansonly15@gmail.com</p>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        </i><input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+
+</html>
