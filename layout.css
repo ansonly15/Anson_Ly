@@ -281,23 +281,25 @@ body {
 /* Contact Section */
 
 #contact {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
     padding: 60px;
 }
 
 #contact .row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.contact-left {
+
+/* .contact-left {
     flex-basis: 35%;
-}
+} */
 
-.contact-right {
-    flex-basis: 65%;
-}
+
+/* .contact-right {
+    display: flex;
+    justify-content: flex-end;
+} */
 
 .contact-left p {
     margin-top: 30px;
