@@ -43,3 +43,9 @@ function opentab(tabname) {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab")
 };
+    const link = document.querySelector('a');
+    console.log('Link href:', link.href);
+
+    link.addEventListener('click', function(event) {
+    console.log('Link clicked');
+});
