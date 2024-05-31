@@ -43,6 +43,9 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+        const link = document.querySelector('a');
+        link.addEventListener('click', function(event) {
+
         });
     </script>
 
