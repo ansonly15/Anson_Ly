@@ -43,13 +43,6 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-
-        const link = document.querySelector('a[href="https://dev.to/anson_ly/deploying-a-static-website-with-aws-s3-52fj"]');
-        console.log('Link href:', link.href);
-
-        link.addEventListener('click', function(event) {
-            console.log('Link clicked');
         });
     </script>
-</body>
-</html>
+
