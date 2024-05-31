@@ -43,18 +43,7 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-        const linkS3 = document.getElementById('learn-more-s3');
-        const linkOther = document.getElementById('learn-more-other');
 
-        console.log('S3 Link href:', linkS3.href);
-        console.log('Other Link href:', linkOther.href);
-
-        linkS3.addEventListener('click', function(event) {
-            console.log('S3 Link clicked');
-        });
-
-        linkOther.addEventListener('click', function(event) {
-            console.log('Other Link clicked');
         });
     </script>
 
