@@ -1,51 +1,55 @@
-document.querySelectorAll('a.smoothscroll').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+    <script>
+        document.querySelectorAll('a.smoothscroll').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
-    });
-});
 
-const navToggle = document.getElementById('nav-toggle');
-const navMenu = document.getElementById('nav');
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
 
-navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form');
+            form.addEventListener('submit', function(event) {
+                const nameInput = document.querySelector('input[name="Name"]');
+                const emailInput = document.querySelector('input[name="email"]');
+                const messageInput = document.querySelector('textarea[name="Message"]');
 
-    form.addEventListener('submit', function(event) {
-        const nameInput = document.querySelector('input[name="Name"]');
-        const emailInput = document.querySelector('input[name="email"]');
-        const messageInput = document.querySelector('textarea[name="Message"]');
+                if (!nameInput.value || !emailInput.value || !messageInput.value) {
+                    alert('Please fill out all fields before submitting the form.');
+                    event.preventDefault();
+                }
+            });
+        });
 
-        if (!nameInput.value || !emailInput.value || !messageInput.value) {
-            alert('Please fill out all fields before submitting the form.');
-            event.preventDefault();
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-    });
-});
 
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents")
+        const link = document.querySelector('a[href="https://dev.to/anson_ly/deploying-a-static-website-with-aws-s3-52fj"]');
+        console.log('Link href:', link.href);
 
-function opentab(tabname) {
-    for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
-    }
-    for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab")
-};
-    const link = document.querySelector('a');
-    console.log('Link href:', link.href);
-
-    link.addEventListener('click', function(event) {
-    console.log('Link clicked');
-});
+        link.addEventListener('click', function(event) {
+            console.log('Link clicked');
+        });
+    </script>
+</body>
+</html>
